@@ -7,7 +7,7 @@
         
         <link rel="icon" href="img/fav-icon.png" type="image/x-icon" />
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Drimo - App Landing Page Template</title>
+        <title>TicTask</title>
 
         <!-- Icon css link -->
         <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -137,6 +137,76 @@
                 background-color: transparent;
                 border: 1px solid #e0e2e6;
             }
+            .btn-primary {
+                padding: 10px 25px;
+                border: 0px;
+                border-radius: 25px;
+                color: #fff;
+                font-family: "Poppins", sans-serif;
+                letter-spacing: .48px;
+                font-size: 18px;
+                text-transform: uppercase;
+                font-weight: normal;
+                border: 2px solid #fff;
+                display: inline-block;
+                color: #fff;
+                -webkit-transition: all 0.5s linear;
+                -o-transition: all 0.5s linear;
+                transition: all 0.5s linear;
+                margin: 0px 10px;
+                text-transform: uppercase;
+                background: #474F72;
+                background: -moz-linear-gradient(left, #CCCFE0 0%, #474F72 100%);
+                background: -webkit-gradient(left top, right top, color-stop(0%, #CCCFE0), color-stop(100%, #474F72));
+                background: -webkit-linear-gradient(left, #CCCFE0 0%, #474F72 100%);
+                background: -o-linear-gradient(left, #CCCFE0 0%, #474F72 100%);
+                background: -ms-linear-gradient(left, #CCCFE0 0%, #474F72 100%);
+                background: -webkit-gradient(linear, left top, right top, from(#CCCFE0), to(#474F72));
+                background: linear-gradient(to right, #CCCFE0 0%, #474F72 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CCCFE0', endColorstr='#474F72', GradientType=1 );
+            }
+            .btn-primary:hover {
+                padding: 10px 25px;
+                border: 0px;
+                border-radius: 25px;
+                color: #fff;
+                font-family: "Poppins", sans-serif;
+                letter-spacing: .48px;
+                font-size: 18px;
+                text-transform: uppercase;
+                font-weight: normal;
+                border: 2px solid #fff;
+                display: inline-block;
+                color: #fff;
+                -webkit-transition: all 0.5s linear;
+                -o-transition: all 0.5s linear;
+                transition: all 0.5s linear;
+                margin: 0px 10px;
+                text-transform: uppercase;
+                background: #474F72;
+                background: -moz-linear-gradient(left, #CCCFE0 0%, #474F72 100%);
+                background: -webkit-gradient(left top, right top, color-stop(0%, #CCCFE0), color-stop(100%, #474F72));
+                background: -webkit-linear-gradient(left, #CCCFE0 0%, #474F72 100%);
+                background: -o-linear-gradient(left, #CCCFE0 0%, #474F72 100%);
+                background: -ms-linear-gradient(left, #CCCFE0 0%, #474F72 100%);
+                background: -webkit-gradient(linear, left top, right top, from(#CCCFE0), to(#474F72));
+                background: linear-gradient(to right, #CCCFE0 0%, #474F72 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CCCFE0', endColorstr='#474F72', GradientType=1 );
+                opacity: .75
+            }
+            .modal-header .close {
+                margin-top: -2px;
+                font-size: 40px;
+            }
+            .modal-header {
+                border: 0px;
+            }
+            .modal-body h3 {
+                line-height: 30px;
+            }
+            .modal-footer {
+                border: 0px;
+            }
         </style>
         <script>
             (function(h,o,t,j,a,r){
@@ -215,7 +285,8 @@
                             data-paddingright="[0,0,0,0]"
                             data-paddingbottom="[0,0,0,0]"
                             data-paddingleft="[0,0,0,0]">Con el reloj y la aplicación no tendrás que perseguir a tus hijos para que hagan los deberes. <br> <br>
-                            <a class="border_btn pl-0" href="#"><i class="icofont icofont-download-alt"></i>Descarga la app</a></div>
+                            <a class="border_btn pl-0" href="#" data-toggle="modal" data-target="#basicModal"><i class="icofont icofont-download-alt" ></i>Descarga la app</a></div>
+
                             
                                                        
                             <div class="tp-caption right_img" 
@@ -409,7 +480,23 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         </footer>
         <!--================End Footer Area =================-->   
         
-        
+        <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                  <h3>Lo sentimos mucho, en estos momentos estamos trabajando en ello.</h3>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
         
         
         
