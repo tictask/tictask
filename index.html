@@ -242,7 +242,9 @@
             }
             @media all and (max-width: 768px) {
                 .main_slider_area {
-                    display: none;
+                    display: none !important;
+                    position: absolute;
+                    z-index: -60;
                 }
             }
             @media all and (min-width: 769px) {
