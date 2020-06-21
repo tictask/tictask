@@ -56,7 +56,7 @@
                 letter-spacing: .72px;
                 padding-bottom: 20px;
             }
-            #mc_embed_signup input#mc-embedded-subscribe, #mc_embed_signup input#mc-embedded-subscribe:focus,  {
+            #mc_embed_signup input#mc-embedded-subscribe, #mc_embed_signup input#mc-embedded-subscribe:focus  {
                 height: 62px;
                 padding: 0px;
                 -webkit-box-shadow: none !important;
@@ -207,6 +207,80 @@
             .modal-footer {
                 border: 0px;
             }
+            h1 {
+                color: #fff;
+                font-family: "Heebo", sans-serif;
+                font-weight: bold !important;
+                position: relative;
+                padding: 10px 10px;
+            }
+            #mobile {
+                min-height: 100vh;
+                background-image: url('img/bkg.jpg');
+                width: 100%;
+                background-size: cover;
+                display: flex;
+                align-items: center;
+
+            }
+            #mobile p {
+                padding: 10px;
+                padding-bottom: 30px;
+                color: #fff;
+                font-family: "Heebo", sans-serif;
+                font-weight: normal !important;
+            }
+            .image {
+               max-width: 400px;
+               text-align: right;
+               width: 100%;
+               margin-top: 50px;
+            }
+            .image-image {
+                width: 100%;
+                text-align: right;            
+            }
+            @media all and (max-width: 768px) {
+                .main_slider_area {
+                    display: none;
+                }
+            }
+            @media all and (min-width: 769px) {
+                #mobile {
+                    display: none;
+                }
+            }
+            @media all and (max-width: 1024px) {
+                .main_slider_area .rev_slider .tp-revslider-mainul li .slider_text_box .ds_first_text {
+                    font-size: 50px !important;
+                    line-height: 55px;
+                }
+            }
+            @media all and (max-width: 400px) {
+                .image {
+                    margin-top: 30px;
+                    width: 250px
+                }
+            }
+            @media (max-width: 767px) {
+                .powerfull_area .power_right_content .power_right_content_inner {
+                    padding: 60px 0px 60px 0px;
+                    width: 100%;
+                    margin: 10px
+                }
+                .powerfull_area .pawerfull_area_inner {
+                    margin: 0px;
+                }
+                .powerfull_area .power_right_content .power_right_content_inner ul li{
+                    width: 100%;
+                }
+                #mc_embed_signup input#mce-EMAIL {
+                    padding: 0px 35px;
+                }
+                .input-group-btn{
+                    margin: 20px auto;
+                }
+            }
         </style>
         <script>
             (function(h,o,t,j,a,r){
@@ -240,7 +314,19 @@
 				</div>
             </div>
         </div>
-        
+        <section id="mobile">
+            <div style="width:100%">
+                               
+                <h1>Consigue que tus hijos<br class="ds_br1" /> autogestionen su tiempo</h1>
+                <p>Con el reloj y la aplicación no tendrás que perseguir a tus hijos para que hagan los deberes.</p>
+                <a class="border_btn pl-0" href="#" data-toggle="modal" data-target="#basicModal">
+                    <i class="icofont icofont-download-alt" ></i>Descarga la app
+                </a>
+                <div class="image-image">
+                    <img src="img/home.gif" alt="" class="image"> 
+                 </div>
+            </div>
+        </section>
         <!--================Slider Area =================-->
         <section class="main_slider_area">
             <div id="dash_slider" class="rev_slider" data-version="5.3.1.6">
@@ -306,7 +392,7 @@
                             data-paddingtop="[0,0,0,0]"
                             data-paddingright="[0,0,0,0]"
                             data-paddingbottom="[0,0,0,0]"
-                            data-paddingleft="[0,0,0,0]"><img src="img/home-slider/airpod.png" alt=""></div>
+                            data-paddingleft="[0,0,0,0]"><img src="img/home-3.gif" alt="" style="width: 500px !important"></div>
                         </div>
                     </li>
                 </ul>
@@ -319,14 +405,16 @@
             <div class="row pawerfull_area_inner">
                 <div class="col-md-5">
                     <div class="power_left_img">
-                        <img src="img/power-ds-img.png" alt="">
+                        <img src="img/reloj-2.png" alt="">
                     </div>
                 </div>
                 <div class="col-md-7">
                     <div class="power_right_content">
                         <div class="power_right_content_inner">
                             <h3 class="single_title">Con un diseño adaptado a las necesidades de los niños</h3>
-                            <p>Aplicación sincronizada con el horario de los profesores, que sirve para avisar a los niños de que deben comenzar a realizar los deberes o entrar en clase online. Planifica y optimiza su tiempo para obtener un mayor rendimiento del estudio. <br>Si tu hijo se pone enfermo, el dispositivo facilita el seguimiento de la docencia desde casa. </p>
+                            <p>
+                                Aplicación sincronizada con el horario de los profesores, que sirve para avisar a los niños de que deben comenzar a realizar los deberes o entrar en clase online. Planifica y optimiza su tiempo para obtener un mayor rendimiento del estudio. 
+                                <br>Si tu hijo se pone enfermo, el dispositivo facilita el seguimiento de la docencia desde casa. </p>
                             <ul>
                                 <li><a><img src="img/tick.png" alt="" width="40px">Avisos de clases</a></li>
                                 <li><a><img src="img/tick.png" alt="" width="40px">Recordatorios medicación</a></li>
@@ -420,7 +508,7 @@
             </div>
             <div class="p_feature_right">
                 <div class="p_feature_img">
-                    <img src="img/provide-ds-img.png" alt="">
+                    <img src="img/iphone-3.png" alt="">
                 </div>
             </div>
         </section>
