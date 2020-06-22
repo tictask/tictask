@@ -240,6 +240,18 @@
                 width: 100%;
                 text-align: right;            
             }
+            .dash_tp_menu_area.navbar_fixed {
+                background: #5D6687;
+            }
+            .logo {
+                max-width: 150px;
+            }
+            @media (max-width: 991px) {
+                .dash_tp_menu_area {
+                    background: #5D6687;
+                }
+                
+            }
             @media all and (max-width: 768px) {
                 .main_slider_area {
                     display: none !important;
@@ -304,9 +316,7 @@
         gtag('config', 'UA-170139286-1');
         </script>
     </head>
-    <body data-spy="scroll" data-target="#bs-example-navbar-collapse-1" data-offset="90">
-       
-       
+    <body data-spy="scroll" data-target="#bs-example-navbar-collapse-1" data-offset="90">       
        <div id="preloader">
             <div id="preloader_spinner">
 				<div class="pre_inner">
@@ -316,12 +326,36 @@
 				</div>
             </div>
         </div>
+        <!--================Header Area =================-->
+        <header class="dash_tp_menu_area">
+            <nav class="navbar navbar-default">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="img/logo-negativo.png" alt="" class="logo"></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class=""><a href="#contact" class="" styke="padding: 0px 20px;" >Versión Prueba</a></li>
+
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </nav>
+        </header>
+        <!--================End Header Area =================-->
         <section id="mobile">
             <div style="width:100%">
                                
                 <h1>Consigue que tus hijos<br class="ds_br1" /> autogestionen su tiempo</h1>
                 <p>Con el reloj y la aplicación no tendrás que perseguir a tus hijos para que hagan los deberes.</p>
-                <a class="border_btn pl-0" href="#" data-toggle="modal" data-target="#basicModal">
+                <a class="border_btn pl-0" href="#contact">
                     <i class="icofont icofont-download-alt" ></i>Descarga la app
                 </a>
                 <div class="image-image">
@@ -373,7 +407,7 @@
                             data-paddingright="[0,0,0,0]"
                             data-paddingbottom="[0,0,0,0]"
                             data-paddingleft="[0,0,0,0]">Con el reloj y la aplicación no tendrás que perseguir a tus hijos para que hagan los deberes. <br> <br>
-                            <a class="border_btn pl-0" href="#" data-toggle="modal" data-target="#basicModal"><i class="icofont icofont-download-alt" ></i>Descarga la app</a></div>
+                            <a class="border_btn pl-0" href="#contact"><i class="icofont icofont-download-alt" ></i>Descarga la app</a></div>
 
                             
                                                        
@@ -521,8 +555,8 @@
                 <div class="container">
                     <div class="subscrib_inner">
                         <div class="main_title">
-                            <h2>Suscríbete</h2>
-                            <p>Suscríbete ahora para conocer todas las novedades de nuestro producto.</p>
+                            <h2>Apúntate para ser el primero en conocer nuestra aplicación</h2>
+                            <p>Te enviaremos en exclusiva un adelanto de la app y serás el primero en tenerla en cuanto la lancemos.</p>
                         </div>
                         <!-- Begin Mailchimp Signup Form -->
                         <div id="mc_embed_signup">
